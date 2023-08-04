@@ -6,9 +6,8 @@ int main(){
     for (i=1; i <= MAX_NUM; i++) 
     {
         i&0x1==1 ? printf("\t%d\n", i):printf("%d",i);
-        
         //utiliza um operador ternário, se a condição "i&0x01==1" (1 se for ímpar) for cumprida,
-        //imprime na tela o valor de i com um \t (tab)
-        //se não for cumprida, apenas imprime o número (há como adicionar o "\n" aqui, eu não quis)
+        //imprime na tela o valor de i com um \t (tab), se não for cumprida, apenas imprime 
+        //o número (há como adicionar o "\n" aqui, eu não quis)
     }
 }
