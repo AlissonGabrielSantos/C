@@ -4,7 +4,7 @@
 int main() {
     int i, num = 1;
     for (i = 1; i <= MAX_NUM; i++) {
-        printf("%d ", i);
+        printf("%2d ", i);
         if (i == (num * (num + 1)) / 2) {
             printf("\n");
             num++;

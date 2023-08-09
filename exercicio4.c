@@ -1,22 +1,18 @@
 #include <stdio.h>
-#define MAX_NUM 16
-
+#define MAX 16
 int main() {
     int asc, col, lin;
     printf("  ");
-    for (int col = 0; col < MAX_NUM; col++) {
-        printf("%2x", col);
+    for (col = 0; col < MAX; col++) {
+        printf("%2X", col);
     }
     printf("\n");
-
-    for (int lin = 0; lin < MAX_NUM; lin++) {
+    for (lin = 0; lin < MAX; lin++) {
         printf("%2X ", lin);
-        for (int col = 0; col < MAX_NUM; col++) {
-            int asc = lin * MAX_NUM + col;
+        for (col = 0; col < MAX; col++) {
+            int asc = lin * MAX + col;
             printf("%c ", (asc < 32) ? 32 : asc);
         }
         printf("\n");
     }
-
-    return 0;
 }
