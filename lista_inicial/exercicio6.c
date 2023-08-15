@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
+/* Ler duas strings e retornar qual é a maior */
 int main(){
     char str1[100], str2[100];
     int num;

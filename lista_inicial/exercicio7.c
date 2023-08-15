@@ -1,6 +1,6 @@
 #include <stdio.h>
-
-int main(){
+/* ler um algarismo e printar o valor ASCII na tela */
+int main(){ 
     int num;
     char simb;
     
@@ -9,7 +9,5 @@ int main(){
     
     simb = getchar();
     printf("%d %c\n", simb, simb);
-    
-    
     
 }
