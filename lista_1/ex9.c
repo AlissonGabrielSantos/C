@@ -7,9 +7,10 @@
 int main(){
     int num;
     scanf("%d", &num);
-    for (int i = 1; i <= num; i++){
+    for (int i = 1; i < num; i++){
         if (num % i == 0){
             printf("%d\n", i);
         }
-    } // ele deu que isso tá incorreto????
+    } /*ele deu que isso tá incorreto????
+        Na verdade não deveríamos imprimir N.*/
 }
