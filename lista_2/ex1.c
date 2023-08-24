@@ -10,9 +10,12 @@ int mygets(char str[], int tamanho){
     }
 }
 int main(void){
-    char tex[MAX];
-    int tam = MAX;
-    printf("Digite uma frase: \n");
-    mygets(tex, tam);
-    printf("\n%s\n", tex);
+    char str[MAX];
+    int i = 0;
+    printf("Digite uma frase: ");
+    mygets(str, MAX);
+    while(str[i]){
+        i++;
+    }
+    printf("O tamanho da string é: %d\n", i);
 }
