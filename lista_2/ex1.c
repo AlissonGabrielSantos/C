@@ -1,21 +1,18 @@
-#include <stdio.h>
-#define MAX 30
-int mygets(char str[], int tamanho){
-    for(int i = 0; i < tamanho; i++){
-        str[i] = getchar();
-        if(str[i] == '\n'){
-            str[i] = '\0';
-            break;
-        }
+#include<stdio.h>
+/*
+Faça um programa que leia 10 números,
+armazene-os em um vetor e apresente os
+5 (cinco) números que estão nas posições
+ímpares.
+*/
+int main(void)
+{
+    int vetor[10];
+    for(int i = 0; i<10; i++) {
+        scanf("%d", &vetor[i]);
     }
-}
-int main(void){
-    char str[MAX];
-    int i = 0;
-    printf("Digite uma frase: ");
-    mygets(str, MAX);
-    while(str[i]){
-        i++;
+    for(int i=0; i<10; i++) {
+        if (i%2)
+            printf("%d\n", vetor[i]);
     }
-    printf("O tamanho da string é: %d\n", i);
 }
