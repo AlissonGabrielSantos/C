@@ -2,11 +2,12 @@
 int mystrcmp(const char *s1, const char *s2){
     char *p = (char *)s1, *q = (char *)s2;
     while ((*p && *q)){
-        p++;
-        q++;
         if (*p != *q)
             return *p-*q;
+        p++;
+        q++;
     }
+    return *p-*q;
 }
 int main(void){
     char str1[] = "texto 1", str2[] = "texto 1";
