@@ -5,7 +5,7 @@ int main(void){
     char nomes[10][20];
     int ind[10], aux;
     for(int i = 0; i < 10; i++){
-        scanf (“%s”,nomes[i]);
+        scanf ("%s",nomes[i]);
         ind[i] = i;
     }
     for (int i=0; i < 10; i++){
