@@ -20,7 +20,8 @@ int main(int argc, char *argv[]) {
 
     if (arq == NULL) {
         printf("Erro ao abrir o arquivo.\n");
-        return 1;
+        fclose(arq);
+        return -1;
     }
 
     while ((c = fgetc(arq)) != EOF) {
